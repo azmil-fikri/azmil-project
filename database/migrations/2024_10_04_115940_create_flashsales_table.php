@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('distributor', function (Blueprint $table) {
+        Schema::create('flashsales', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_distributor');
-            $table->string('lokasi');
-            $table->string('kontak');
-            $table->string('email');
+            $table->string('name');
+            $table->bigInteger('price');
+            $table->string('category');
+            $table->text('description');
+            $table->string('image');
             $table->timestamps();
         });
     }
@@ -26,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('distributor');
+        Schema::dropIfExists('flashsales');
     }
 };

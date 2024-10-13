@@ -34,8 +34,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="card card-statistic-1">
                     <div class="card-icon bg-danger">
-                        <i class="far fa-newspaper"></i>
-                    </div>
+                        <i class="fas fa-box"></i>
+                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
                             <h4>Total Produk</h4>
@@ -47,11 +47,12 @@
                 </div>
             </div>
 
+
             <!-- Card 3: Total Distributor -->
             <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div class="card card-statistic-1">
                     <div class="card-icon bg-primary">
-                        <i class="far fa-user"></i>
+                        <i class="fas fa-shipping-fast"></i>
                     </div>
                     <div class="card-wrap">
                         <div class="card-header">
@@ -59,6 +60,23 @@
                         </div>
                         <div class="card-body">
                             {{ $distributors }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Total Flashsale -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                    <div class="card-icon bg-danger">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card-header">
+                            <h4>Total Flashsale</h4>
+                        </div>
+                        <div class="card-body">
+                            {{ $flashsales }}
                         </div>
                     </div>
                 </div>
